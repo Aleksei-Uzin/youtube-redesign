@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+
+.mulish-font {
+  font-family: 'Mulish', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Typography */
+.text-base {
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: 1px;
+}
+
+.text-small {
+  font-size: 12px;
+  line-height: 1.2;
+}
+
+.img-link {
+  height: min-content;
+  display: inline-block;
+}

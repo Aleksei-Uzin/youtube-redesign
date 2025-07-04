@@ -1,7 +1,8 @@
 :root {
   /* color scheme */
   --black: #000000;
-  --primary-gray: #30384c;
+  --primary-gray: #898989;
+  --dark-gray: #30384c;
   --light-gray: #ebebeb;
   --alert: #ff0000;
   --white: #ffffff;

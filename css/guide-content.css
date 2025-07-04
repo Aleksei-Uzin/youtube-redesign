@@ -1,0 +1,41 @@
+@import url('./variables.css');
+
+.guide-content__item {
+  margin-bottom: 29px;
+}
+
+.guide-content__link {
+  display: flex;
+  gap: 15px;
+  height: 20px;
+  color: var(--primary-gray);
+}
+
+.subscriptions__item {
+  margin-bottom: 23px;
+}
+
+.subscriptions__link,
+.guide-content__settings {
+  display: flex;
+  gap: 10px;
+  line-height: 1.6;
+  color: var(--primary-gray);
+}
+
+.guide-content__link:hover,
+.subscriptions__link:hover,
+.guide-content__settings:hover {
+  color: var(--alert);
+}
+
+.guide-content__box {
+  padding-top: 80px;
+  padding-bottom: 40px;
+}
+
+.guide-content__settings {
+  gap: 15px;
+  padding-left: 4px;
+  line-height: 1.1;
+}

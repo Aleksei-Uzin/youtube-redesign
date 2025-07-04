@@ -1,25 +1,48 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
 
-.mulish-font {
+.font_mulish {
   font-family: 'Mulish', sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
 }
 
+/* Margin */
+.mb_60 {
+  margin-bottom: 60px;
+}
+
+.mb_30 {
+  margin-bottom: 30px;
+}
+
+/* Padding */
+.pt_20 {
+  padding-top: 20px;
+}
+
+.pl_30 {
+  padding-left: 30px;
+}
+
 /* Typography */
-.text-base {
+.text_base {
   font-size: 16px;
   line-height: 1.2;
   letter-spacing: 1px;
 }
 
-.text-small {
+.text_18 {
+  font-size: 18px;
+  line-height: 1;
+}
+
+.text_small {
   font-size: 12px;
   line-height: 1.2;
 }
 
-.img-link {
+.img_link {
   height: min-content;
   display: inline-block;
 }

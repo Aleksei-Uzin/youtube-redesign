@@ -1,0 +1,7 @@
+/* Main content */
+.content {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  grid-auto-flow: row;
+  gap: 66px;
+}

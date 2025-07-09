@@ -95,7 +95,46 @@
 }
 
 @media (max-width: 768px) {
+  .header {
+    padding-top: 13px;
+    padding-right: 16px;
+    padding-bottom: 12px;
+    padding-left: 16px;
+  }
+
   .header-youtube-menu {
     gap: var(--indent-30);
+  }
+
+  .profile-navbar-list {
+    gap: var(--indent-20);
+  }
+}
+
+@media (max-width: 660px) {
+  .profile-navbar-list li:nth-child(-n + 3) {
+    display: none;
+  }
+
+  .youtube-menu-button,
+  .search-form__input {
+    display: none;
+  }
+
+  .header-youtube-menu {
+    gap: 135px;
+  }
+
+  .search-form {
+    margin-right: 0;
+  }
+
+  .profile-navbar-list__profile-button {
+    margin-top: 0;
+  }
+
+  .profile-navbar-list__profile-button {
+    width: 30px;
+    height: 30px;
   }
 }

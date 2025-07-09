@@ -10,6 +10,8 @@
   --white: #ffffff;
 
   /* Indents */
+  --indent-10: 10px;
+  --indent-20: 20px;
   --indent-30: 30px;
   --indent-60: 60px;
   --indent-70: 70px;

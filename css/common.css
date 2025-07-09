@@ -2,6 +2,7 @@
 
 /* Main content */
 .content {
+  position: relative;
   display: grid;
   grid-template-columns: max-content 1fr;
   grid-auto-flow: row;
@@ -13,6 +14,7 @@
   padding: 10px 20px;
   border-radius: 20px;
   background-color: var(--alert);
+  white-space: nowrap;
   transition: opacity 400ms ease-out;
   color: var(--white);
 }
@@ -28,4 +30,14 @@
   align-self: end;
   align-items: end;
   height: 100%;
+}
+
+@media (max-width: 992px) {
+  .content {
+    grid-template-columns: 1fr;
+  }
+
+  .subscriptions {
+    display: none;
+  }
 }

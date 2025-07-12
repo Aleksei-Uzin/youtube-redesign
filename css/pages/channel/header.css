@@ -1,10 +1,16 @@
-@import url('./variables.css');
+@import url('../../variables.css');
 
 .header {
   display: flex;
   justify-content: space-between;
   padding: var(--indent-30);
   padding-right: var(--indent-70);
+}
+
+.channel-name {
+  display: none;
+  font-weight: 700;
+  white-space: nowrap;
 }
 
 .header-youtube-menu {
@@ -54,6 +60,10 @@
   gap: 50px;
 }
 
+.profile-navbar-list li:first-child {
+  display: none;
+}
+
 .profile-navbar-list__profile-button {
   margin-top: -8px;
 }
@@ -98,7 +108,7 @@
   .header {
     padding-top: 13px;
     padding-right: 16px;
-    padding-bottom: 12px;
+    padding-bottom: 18px;
     padding-left: 16px;
   }
 
@@ -112,21 +122,34 @@
 }
 
 @media (max-width: 660px) {
-  .profile-navbar-list li:nth-child(-n + 3) {
-    display: none;
+  .img_link {
+    width: 38px;
+    overflow: hidden;
   }
 
+  .profile-navbar-list > li,
   .youtube-menu-button,
   .search-form__input {
     display: none;
   }
 
+  .profile-navbar-list li:first-child,
+  .channel-name {
+    display: block;
+  }
+
+  .profile-navbar__kebab-button {
+    padding-top: 2px;
+    padding-right: 4px;
+  }
+
   .header-youtube-menu {
-    gap: 135px;
+    gap: 7px;
   }
 
   .search-form {
     margin-right: 0;
+    margin-left: 70px;
   }
 
   .profile-navbar-list__profile-button {

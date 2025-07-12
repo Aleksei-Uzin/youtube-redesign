@@ -1,0 +1,140 @@
+@import url('../../variables.css');
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: var(--indent-30);
+  padding-right: var(--indent-70);
+}
+
+.header-youtube-menu {
+  display: flex;
+  gap: var(--indent-60);
+  width: 75%;
+}
+
+.header-youtube-buttons {
+  display: flex;
+  gap: var(--indent-30);
+}
+
+.youtube-menu-button {
+  height: 17px;
+  line-height: 2.2;
+}
+
+.search-form {
+  position: relative;
+  margin-top: -10px;
+  width: 830px;
+  margin-right: var(--indent-70);
+}
+
+.search-form__input {
+  padding: 12px 12px 12px 23px;
+  width: 100%;
+  border: none;
+  border-radius: 22px;
+  background-color: var(--light-gray);
+  color: var(--dark-gray);
+}
+
+.search-form__input:focus {
+  outline: 2px solid var(--dark-gray);
+}
+
+.search-form__button {
+  position: absolute;
+  top: 13px;
+  right: 17px;
+}
+
+.profile-navbar-list {
+  display: flex;
+  gap: 50px;
+}
+
+.profile-navbar-list__profile-button {
+  margin-top: -8px;
+}
+
+.profile-navbar-list,
+.header-youtube-menu,
+.search-form {
+  transition-property: margin-right, gap;
+  transition-duration: 600ms;
+  transition-timing-function: ease-out;
+}
+
+.notification-button {
+  position: relative;
+}
+
+.notification-button::after {
+  content: '3';
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  right: -5px;
+  top: -7px;
+  font-weight: 700;
+  line-height: 1.4;
+  background-color: var(--alert);
+  border-radius: 50%;
+  color: var(--white);
+}
+
+@media (max-width: 1024px) {
+  .profile-navbar-list {
+    gap: var(--indent-30);
+  }
+
+  .search-form {
+    margin-right: var(--indent-30);
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding-top: 13px;
+    padding-right: 16px;
+    padding-bottom: 12px;
+    padding-left: 16px;
+  }
+
+  .header-youtube-menu {
+    gap: var(--indent-30);
+  }
+
+  .profile-navbar-list {
+    gap: var(--indent-20);
+  }
+}
+
+@media (max-width: 660px) {
+  .profile-navbar-list li:nth-child(-n + 3) {
+    display: none;
+  }
+
+  .youtube-menu-button,
+  .search-form__input {
+    display: none;
+  }
+
+  .header-youtube-menu {
+    gap: 135px;
+  }
+
+  .search-form {
+    margin-right: 0;
+  }
+
+  .profile-navbar-list__profile-button {
+    margin-top: 0;
+  }
+
+  .profile-navbar-list__profile-button {
+    width: 30px;
+    height: 30px;
+  }
+}

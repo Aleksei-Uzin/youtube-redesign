@@ -3,12 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Channel</title>
+    <title>Margaret Phelps</title>
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/utils.css" />
     <link rel="stylesheet" href="./css/common.css" />
-    <link rel="stylesheet" href="./css/header.css" />
     <link rel="stylesheet" href="./css/guide-content.css" />
+    <link rel="stylesheet" href="./css/pages/channel/header.css" />
+    <link rel="stylesheet" href="./css/pages/channel/main-content.css" />
   </head>
   <body class="font_mulish">
     <header class="header">
@@ -31,6 +32,7 @@
             />
           </a>
         </nav>
+        <span class="channel-name text_base">Margaret Phelps</span>
         <form class="search-form">
           <input
             type="search"
@@ -46,6 +48,16 @@
       </div>
       <div class="profile-navbar">
         <ul class="profile-navbar-list">
+          <li>
+            <button class="profile-navbar__kebab-button" type="button">
+              <img
+                src="./assets/icons/menu-kebab.svg"
+                alt="kebab menue"
+                width="5"
+                height="19"
+              />
+            </button>
+          </li>
           <li>
             <button type="button">
               <img
@@ -90,10 +102,10 @@
         </ul>
       </div>
     </header>
-    <div class="content">
+    <div class="content channel-content">
       <aside class="guide-content pl_30">
         <nav class="guide-content__navbar pt_20">
-          <ul>
+          <ul class="guide-content__navbar-list">
             <li class="guide-content__item">
               <a href="#" class="guide-content__link text_base">
                 <img
@@ -116,7 +128,7 @@
                 Trending
               </a>
             </li>
-            <li class="mb_60">
+            <li class="guide-content__item mb_60">
               <a href="#" class="guide-content__link text_base">
                 <img
                   src="./assets/icons/box.svg"
@@ -204,7 +216,7 @@
                 Games
               </a>
             </li>
-            <li class="mb_60">
+            <li class="guide-content__item mb_60">
               <a href="#" class="guide-content__link text_base">
                 <img
                   src="./assets/icons/arrow-down.svg"
@@ -288,7 +300,7 @@
             </li>
           </ul>
         </section>
-        <div class="guide-content__box">
+        <div class="guide-content__settings-box">
           <a class="guide-content__settings" href="#">
             <img
               src="./assets/icons/gear.svg"
@@ -300,7 +312,357 @@
           </a>
         </div>
       </aside>
-      <main></main>
+      <main class="main-content">
+        <div class="main-content__bg-box"></div>
+        <header class="channel-header">
+          <figure class="profile-section">
+            <img
+              class="profile-section__img"
+              src="./content/channel/Margaret-Phelps.png"
+              alt="Margaret Phelps"
+              width="80"
+              height="80"
+            />
+            <figcaption class="profile-section__figcaption text_26">
+              Margaret Phelps
+              <br />
+              <span class="profile-section__subscription text_13">
+                245K subscribed
+              </span>
+            </figcaption>
+          </figure>
+          <div class="subscribe-section">
+            <button
+              class="subscribe-section__notification-button"
+              type="button"
+            >
+              <img
+                src="./assets/icons/bell.svg"
+                alt="Profile notifications"
+                width="22"
+                height="26"
+              />
+            </button>
+            <button class="subscribe-btn text_base" type="button">
+              Subscribe 2.3m
+            </button>
+          </div>
+        </header>
+        <div class="channel-options">
+          <div class="channel-options__content-box">
+            <nav class="channel-navigation">
+              <ul class="channel-navigation__list text_18">
+                <li>
+                  <a class="channel-navigation__link" href="#">Home</a>
+                </li>
+                <li>
+                  <a class="channel-navigation__link" href="#">Videos</a>
+                </li>
+                <li>
+                  <a class="channel-navigation__link" href="#">Playlists</a>
+                </li>
+                <li>
+                  <a class="channel-navigation__link" href="#">Channels</a>
+                </li>
+                <li>
+                  <a class="channel-navigation__link" href="#">Discussion</a>
+                </li>
+                <li>
+                  <a class="channel-navigation__link" href="#">About</a>
+                </li>
+                <li>
+                  <button type="button">
+                    <img src="./assets/icons/search.svg" alt="Search" />
+                  </button>
+                </li>
+                <li>
+                  <button type="button">
+                    <img src="./assets/icons/arrow-down.svg" alt="Search" />
+                  </button>
+                </li>
+              </ul>
+            </nav>
+            <section class="channel-video">
+              <figure class="img-box">
+                <img
+                  class="main-content-article__img"
+                  src="./content/channel/channel-video.png"
+                  alt="Astronomy Or Astrology"
+                  width="540"
+                  height="250"
+                />
+                <figcaption class="text_base">
+                  <time class="img-box__duration" datetime="P7M36S">
+                    7:36
+                  </time>
+                </figcaption>
+              </figure>
+              <article>
+                <h1 class="channel-video__header text_26">
+                  Choosing The Best Audio Player
+                  <br />
+                  Software For Your Computer
+                </h1>
+                <p class="channel-video__description text_base">
+                  Your cheap internet-based banner advertising will become one
+                  of the sought for ads there are. Today, the world of Internet
+                  advertising is rapidly evolving beyond banner ads and
+                  intrusive pop-ups. Bayles A common medium for advertising on
+                  the Internet is the use of banner ads.
+                </p>
+                <footer class="channel-video__footer text_base">
+                  11k views · 6 months ago
+                </footer>
+              </article>
+            </section>
+          </div>
+          <div class="recommended_channel">
+            <h2 class="recommended_channel__header text_base">
+              Recommended channel
+            </h2>
+            <ul class="recommended_channel__list">
+              <li>
+                <a class="recommended_channel_link text_18" href="#">
+                  <img
+                    src="./content/channel/recommended-channel/Flora_Benson.png"
+                    alt="Flora Benson"
+                    width="50"
+                    height="50"
+                  />
+                  Flora Benson
+                </a>
+              </li>
+              <li>
+                <a class="recommended_channel_link text_18" href="#">
+                  <img
+                    src="./content/channel/recommended-channel/Violet_Cobb.png"
+                    alt="Violet Cobb"
+                    width="50"
+                    height="50"
+                  />
+                  Violet Cobb
+                </a>
+              </li>
+              <li>
+                <a class="recommended_channel_link text_18" href="#">
+                  <img
+                    src="./content/channel/recommended-channel/Phillip_Mullins.png"
+                    alt="Phillip Mullins"
+                    width="50"
+                    height="50"
+                  />
+                  Phillip Mullins
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <section class="main-content-section pb_50">
+          <header class="main-content-section__header pr_150">
+            <div class="main-content-section__group">
+              <h2 class="text_26">Margaret Phelps videos</h2>
+            </div>
+            <nav class="scroll-buttons">
+              <button class="text_none" type="button">
+                <img
+                  src="./assets/icons/arrow-left.svg"
+                  alt="Arrow left"
+                  width="28"
+                  height="28"
+                />
+              </button>
+              <button class="text_none" type="button">
+                <img
+                  src="./assets/icons/arrow-right.svg"
+                  alt="Arrow right"
+                  width="28"
+                  height="28"
+                />
+              </button>
+            </nav>
+          </header>
+          <div class="main-content-section__box">
+            <article class="main-content-article">
+              <figure class="img-box">
+                <img
+                  class="main-content-article__img"
+                  src="./content/channel/videos/Astronomy_Or_Astrology.png"
+                  alt="Astronomy Or Astrology"
+                  width="250"
+                  height="150"
+                />
+                <figcaption class="img-box__figcaption text_base">
+                  Astronomy Or Astrology
+                  <time class="img-box__duration" datetime="P4M15S">
+                    7:36
+                  </time>
+                </figcaption>
+              </figure>
+              <footer class="main-content-article__footer text_13">
+                <div class="main-content-article__footer-box">
+                  <span class="main-content-article__views">240k views</span>
+                  <span class="main-content-article__separator"></span>
+                  <time
+                    class="main-content-article__time"
+                    datetime="2025-07-04"
+                  >
+                    4 months ago
+                  </time>
+                </div>
+                <span class="main-content-section__owner">Food & Drink</span>
+              </footer>
+            </article>
+            <article class="main-content-article">
+              <figure class="img-box">
+                <img
+                  class="main-content-article__img"
+                  src="./content/channel/videos/Advertising_Outdoors.png"
+                  alt="Advertising Outdoors"
+                  width="250"
+                  height="150"
+                />
+                <figcaption class="img-box__figcaption text_base">
+                  Advertising Outdoors
+                  <time class="img-box__duration" datetime="P8M0S">2:19</time>
+                </figcaption>
+              </figure>
+              <footer class="main-content-article__footer text_13">
+                <div class="main-content-article__footer-box">
+                  <span class="main-content-article__views">13k views</span>
+                  <span class="main-content-article__separator"></span>
+                  <time
+                    class="main-content-article__time"
+                    datetime="2025-06-07"
+                  >
+                    15 days ago
+                  </time>
+                </div>
+                <span class="main-content-section__owner">Food & Drink</span>
+              </footer>
+            </article>
+            <article class="main-content-article">
+              <figure class="img-box">
+                <img
+                  class="main-content-article__img"
+                  src="./content/channel/videos/Radio_Astronomy.png"
+                  alt="Radio Astronomy"
+                  width="250"
+                  height="150"
+                />
+                <figcaption class="img-box__figcaption text_base">
+                  Radio Astronomy
+                  <time class="img-box__duration" datetime="P5M32S">
+                    9:05
+                  </time>
+                </figcaption>
+              </figure>
+              <footer class="main-content-article__footer text_13">
+                <div class="main-content-article__footer-box">
+                  <span class="main-content-article__views">1k views</span>
+                  <span class="main-content-article__separator"></span>
+                  <time
+                    class="main-content-article__time"
+                    datetime="2025-06-25"
+                  >
+                    11 months ago
+                  </time>
+                </div>
+                <span class="main-content-section__owner">Food & Drink</span>
+              </footer>
+            </article>
+            <article class="main-content-article">
+              <figure class="img-box">
+                <img
+                  class="main-content-article__img"
+                  src="./content/channel/videos/A_Good_Autoresponder.png"
+                  alt="A Good Autoresponder"
+                  width="250"
+                  height="150"
+                />
+                <figcaption class="img-box__figcaption text_base">
+                  A Good Autoresponder
+                  <time class="img-box__duration" datetime="P6M40S">
+                    3:40
+                  </time>
+                </figcaption>
+              </figure>
+              <footer class="main-content-article__footer text_13">
+                <div class="main-content-article__footer-box">
+                  <span class="main-content-article__views">45k views</span>
+                  <span class="main-content-article__separator"></span>
+                  <time
+                    class="main-content-article__time"
+                    datetime="2025-02-07"
+                  >
+                    2 months ago
+                  </time>
+                </div>
+                <span class="main-content-section__owner">Food & Drink</span>
+              </footer>
+            </article>
+            <article class="main-content-article">
+              <figure class="img-box">
+                <img
+                  class="main-content-article__img"
+                  src="./content/channel/videos/Baby_Monitor_Technology.png"
+                  alt="Baby Monitor Technology"
+                  width="250"
+                  height="150"
+                />
+                <figcaption class="img-box__figcaption text_base">
+                  Baby Monitor Technology
+                  <time class="img-box__duration" datetime="P1M45S">
+                    1.56
+                  </time>
+                </figcaption>
+              </figure>
+              <footer class="main-content-article__footer text_13">
+                <div class="main-content-article__footer-box">
+                  <span class="main-content-article__views">86k views</span>
+                  <span class="main-content-article__separator"></span>
+                  <time
+                    class="main-content-article__time"
+                    datetime="2025-07-05"
+                  >
+                    7 days ago
+                  </time>
+                </div>
+                <span class="main-content-section__owner">Food & Drink</span>
+              </footer>
+            </article>
+            <article class="main-content-article">
+              <figure class="img-box">
+                <img
+                  class="main-content-article__img"
+                  src="./content/channel/videos/Asteroids.png"
+                  alt="Asteroids"
+                  width="250"
+                  height="150"
+                />
+                <figcaption class="img-box__figcaption text_base">
+                  Asteroids
+                  <time class="img-box__duration" datetime="P2M12S">
+                    2:12
+                  </time>
+                </figcaption>
+              </figure>
+              <footer class="main-content-article__footer text_13">
+                <div class="main-content-article__footer-box">
+                  <span class="main-content-article__views">123k views</span>
+                  <span class="main-content-article__separator"></span>
+                  <time
+                    class="main-content-article__time"
+                    datetime="2025-07-04"
+                  >
+                    4 months ago
+                  </time>
+                </div>
+                <span class="main-content-section__owner">Dollie Blair</span>
+              </footer>
+            </article>
+          </div>
+        </section>
+      </main>
     </div>
   </body>
 </html>

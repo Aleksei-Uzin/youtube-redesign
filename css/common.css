@@ -11,7 +11,7 @@
 
 /* Subscribe Button */
 .subscribe-btn {
-  padding: 10px 20px;
+  padding: 10px 23px;
   border-radius: 20px;
   background-color: var(--alert);
   white-space: nowrap;
@@ -32,6 +32,88 @@
   height: 100%;
 }
 
+.img-box {
+  position: relative;
+}
+
+.img-box__duration {
+  position: absolute;
+  right: 10px;
+  bottom: 38px;
+  padding: 3px 7px;
+  background-color: var(--black);
+  font-weight: 200;
+  border-radius: 12px;
+  color: var(--white);
+  opacity: 0.3;
+}
+
+.img-box__figcaption {
+  padding-top: 6px;
+  font-weight: 700;
+  color: var(--black-secondary);
+}
+
+.main-content-section {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 33px;
+}
+
+.main-content-section__header {
+  display: flex;
+  justify-content: space-between;
+  margin-left: -6px;
+  max-height: 50px;
+  transition: padding 400ms ease-out;
+}
+
+.main-content-section__group {
+  display: flex;
+  align-items: center;
+  gap: var(--indent-20);
+  padding-right: var(--indent-20);
+  padding-left: 6px;
+}
+
+.main-content-section__box {
+  display: flex;
+  gap: 40px;
+  padding-right: var(--indent-30);
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.main-content-article__img {
+  border-radius: 16px;
+}
+
+.main-content-article__footer {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 6px;
+  color: var(--light-gray-secondary);
+}
+
+.main-content-article__footer-box {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.main-content-article__separator {
+  display: inline-block;
+  width: 2px;
+  height: 2px;
+  background-color: var(--light-gray-secondary);
+}
+
+@media (max-width: 1200px) {
+  .main-content-section__header {
+    padding-right: var(--indent-30);
+  }
+}
+
 @media (max-width: 992px) {
   .content {
     grid-template-columns: 1fr;
@@ -39,5 +121,27 @@
 
   .subscriptions {
     display: none;
+  }
+}
+
+@media (max-width: 660px) {
+  .main-content-section__header {
+    display: none;
+  }
+
+  .main-content-section__box {
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    padding-right: 0;
+  }
+
+  .main-content-article {
+    width: fit-content;
+  }
+
+  .main-content-article__img {
+    width: 288px;
+    height: 150px;
   }
 }

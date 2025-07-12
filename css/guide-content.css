@@ -4,6 +4,10 @@
   margin-bottom: 29px;
 }
 
+.mb_60 {
+  margin-bottom: 60px;
+}
+
 .guide-content__link {
   display: flex;
   gap: 15px;
